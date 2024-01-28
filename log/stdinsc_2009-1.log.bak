@@ -1,0 +1,23 @@
+C:[09/03/2009 11:30:32.69][190.202.100.78][775] SELECT pensum,c_uni_ca FROM dace002 WHERE exp_e='02-16395008' [1][0] OK
+C:[09/03/2009 11:30:32.81][190.202.100.78][785] SELECT c_asigna FROM dace006 WHERE exp_e='02-16395008' and lapso='2009-1' and (status='7' or status='A') [0][0] OK
+C:[09/03/2009 11:30:32.36][190.202.100.78][400] SELECT A.seccion, status from dace006 A, tblaca004 B WHERE A.exp_e='02-16395008' AND A.c_asigna='342444' AND A.c_asigna=B.c_asigna AND A.seccion=B.seccion AND A.lapso=B.lapso AND A.lapso='2009-1' AND NOT status in('C', 'P') AND COD_CARRERA LIKE '%6%'  [0][0] OK
+C:[09/03/2009 11:30:32.36][190.202.100.78][539] SELECT acta FROM tblaca004 WHERE c_asigna='342444' AND seccion='T1' AND lapso='2009-1' AND COD_CARRERA LIKE '%6%'  [1][0] OK
+C:[09/03/2009 11:30:32.36][190.202.100.78][564] SELECT acta FROM tblaca004 WHERE c_asigna='342444' AND seccion='T1' AND lapso='2009-1' AND COD_CARRERA LIKE '%6%'  [1][0] OK
+C:[09/03/2009 11:30:32.36][190.202.100.78][576] SELECT MAX(nro_prof) FROM dace006 WHERE lapso='2009-1'  AND c_asigna='342444' AND seccion='T1' [1][0] OK
+C:[09/03/2009 11:30:32.36][190.202.100.78][587] INSERT INTO dace006 (acta, lapso, c_asigna, seccion, exp_e, status, status_c_nota, fecha, nro_prof) VALUES ('425','2009-1','342444', 'T1','02-16395008','Y','2','2009-03-09','2') [0][1] OK
+C:[09/03/2009 11:30:32.36][190.202.100.78][95] SELECT A.c_asigna, asignatura, unid_credito, seccion, status FROM tblaca008 A, dace006 B WHERE exp_e='02-16395008' AND lapso='2009-1' AND A.c_asigna = B.c_asigna AND NOT status IN('C','P') ORDER BY status desc, A.c_asigna [3][0] OK
+C:[09/03/2009 11:30:32.36][190.202.100.78][107] UPDATE dace002 set sexo='2', f_nac_e='1984-7-21' WHERE exp_e='02-16395008' [0][1] OK
+C:[09/03/2009 11:32:26.96][190.202.100.78][775] SELECT pensum,c_uni_ca FROM dace002 WHERE exp_e='02-16395008' [1][0] OK
+C:[09/03/2009 11:32:26.08][190.202.100.78][785] SELECT c_asigna FROM dace006 WHERE exp_e='02-16395008' and lapso='2009-1' and (status='7' or status='A') [0][0] OK
+C:[09/03/2009 11:32:26.11][190.202.100.78][400] SELECT A.seccion, status from dace006 A, tblaca004 B WHERE A.exp_e='02-16395008' AND A.c_asigna='342444' AND A.c_asigna=B.c_asigna AND A.seccion=B.seccion AND A.lapso=B.lapso AND A.lapso='2009-1' AND NOT status in('C', 'P') AND COD_CARRERA LIKE '%6%'  [1][0] OK
+C:[09/03/2009 11:32:26.11][190.202.100.78][415] SELECT MAX(nro_prof) FROM dace006 WHERE lapso='2009-1'  AND c_asigna='342444' AND seccion='T1' [1][0] OK
+C:[09/03/2009 11:32:26.11][190.202.100.78][426] UPDATE dace006 SET status='Y',nro_prof='4' WHERE exp_e='02-16395008' AND c_asigna='342444' AND lapso='2009-1' AND status='Z' [0][1] OK
+C:[09/03/2009 11:32:26.11][190.202.100.78][95] SELECT A.c_asigna, asignatura, unid_credito, seccion, status FROM tblaca008 A, dace006 B WHERE exp_e='02-16395008' AND lapso='2009-1' AND A.c_asigna = B.c_asigna AND NOT status IN('C','P') ORDER BY status desc, A.c_asigna [3][0] OK
+C:[09/03/2009 11:32:26.11][190.202.100.78][107] UPDATE dace002 set sexo='2', f_nac_e='1984-7-21' WHERE exp_e='02-16395008' [0][1] OK
+C:[09/03/2009 11:33:39.99][190.202.100.78][775] SELECT pensum,c_uni_ca FROM dace002 WHERE exp_e='02-16395008' [1][0] OK
+C:[09/03/2009 11:33:39.11][190.202.100.78][785] SELECT c_asigna FROM dace006 WHERE exp_e='02-16395008' and lapso='2009-1' and (status='7' or status='A') [0][0] OK
+C:[09/03/2009 11:33:39.80][190.202.100.78][400] SELECT A.seccion, status from dace006 A, tblaca004 B WHERE A.exp_e='02-16395008' AND A.c_asigna='342444' AND A.c_asigna=B.c_asigna AND A.seccion=B.seccion AND A.lapso=B.lapso AND A.lapso='2009-1' AND NOT status in('C', 'P') AND COD_CARRERA LIKE '%6%'  [1][0] OK
+C:[09/03/2009 11:33:39.80][190.202.100.78][415] SELECT MAX(nro_prof) FROM dace006 WHERE lapso='2009-1'  AND c_asigna='342444' AND seccion='T1' [1][0] OK
+C:[09/03/2009 11:33:39.80][190.202.100.78][426] UPDATE dace006 SET status='Y',nro_prof='12' WHERE exp_e='02-16395008' AND c_asigna='342444' AND lapso='2009-1' AND status='Z' [0][1] OK
+C:[09/03/2009 11:33:39.80][190.202.100.78][95] SELECT A.c_asigna, asignatura, unid_credito, seccion, status FROM tblaca008 A, dace006 B WHERE exp_e='02-16395008' AND lapso='2009-1' AND A.c_asigna = B.c_asigna AND NOT status IN('C','P') ORDER BY status desc, A.c_asigna [3][0] OK
+C:[09/03/2009 11:33:39.80][190.202.100.78][107] UPDATE dace002 set sexo='2', f_nac_e='1984-7-21' WHERE exp_e='02-16395008' [0][1] OK

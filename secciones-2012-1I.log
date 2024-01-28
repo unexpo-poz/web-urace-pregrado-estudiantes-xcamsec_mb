@@ -1,0 +1,6 @@
+C:[19/03/2013 15:29:08.83][172.16.8.250][526] SELECT acta FROM TBLACA004 WHERE c_asigna='344834' AND seccion='M1' AND lapso='2012-1I' AND inscritos=tot_cup AND COD_CARRERA LIKE '%6%'  [0][0] OK
+C:[19/03/2013 15:29:08.07][172.16.8.250][526] SELECT acta FROM TBLACA004 WHERE c_asigna='344843' AND seccion='M1' AND lapso='2012-1I' AND inscritos=tot_cup AND COD_CARRERA LIKE '%6%'  [0][0] OK
+C:[19/03/2013 15:29:08.32][172.16.8.250][526] SELECT acta FROM TBLACA004 WHERE c_asigna='300956' AND seccion='T1' AND lapso='2012-1I' AND inscritos=tot_cup AND COD_CARRERA LIKE '%6%'  [1][0] OK
+C:[19/03/2013 15:30:29.39][172.16.8.250][526] SELECT acta FROM TBLACA004 WHERE c_asigna='344687' AND seccion='M1' AND lapso='2012-1I' AND inscritos=tot_cup AND COD_CARRERA LIKE '%6%'  [0][0] OK
+C:[19/03/2013 15:30:29.63][172.16.8.250][526] SELECT acta FROM TBLACA004 WHERE c_asigna='300956' AND seccion='N1' AND lapso='2012-1I' AND inscritos=tot_cup AND COD_CARRERA LIKE '%6%'  [1][0] OK
+C:[19/03/2013 15:32:09.54][172.16.8.250][526] SELECT acta FROM TBLACA004 WHERE c_asigna='300101' AND seccion='T5' AND lapso='2012-1I' AND inscritos=tot_cup AND COD_CARRERA LIKE '%2%'  [1][0] OK
